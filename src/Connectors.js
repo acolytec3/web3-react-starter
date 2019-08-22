@@ -22,7 +22,7 @@ const supportedNetworkURLs = {
 
 // const defaultNetwork = 1;
 
-const Injected = new InjectedConnector({
+const Metamask = new InjectedConnector({
   supportedNetworks: [3]
 });
 
@@ -63,7 +63,7 @@ const Portis = new PortisConnector({
 });
 
 export default {
-  Injected,
+  Metamask,
   Network,
 /*  Trezor,
   Ledger,

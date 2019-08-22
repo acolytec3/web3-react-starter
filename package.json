@@ -1,5 +1,5 @@
 {
-  "private": true,
+  "private": false,
   "homepage": "acolytec3.github.io/web3-react-starter",
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js",
