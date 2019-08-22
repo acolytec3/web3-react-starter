@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import connectors from "../Connectors.js";
 import { useWeb3Context } from "web3-react";
+import { ethers } from 'ethers'
 
 function ActivateConnectors(props) {
   const context = useWeb3Context();
-  const [show, setShow] = useState(true);
+  const [transactionHash, setTransactionHash] = React.useState()
   
   
   function sendTransaction() {
@@ -49,10 +50,11 @@ function ActivateConnectors(props) {
       )}
       {context.error && <p>Something went wrong.  Please try connecting to your Web3 provider again.</p>}
       {context.active && context.account && (
-        <button onClick={sendTransaction()}>
+        <button onClick={sendTransaction}>
           Send Dummy Transaction
-          </button>
-        )}
+        </button>
+      )}
+      {transactionHash && <p>{transactionHash}</p>}
     </React.Fragment>
   );
   }

@@ -7,7 +7,7 @@ function App() {
 
 
     return (
-        <Web3Provider connectors={connectors} libraryName="ether.js">
+        <Web3Provider connectors={connectors} libraryName="ethers.js">
             <ActivateConnectors />
         </Web3Provider>
     )
