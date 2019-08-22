@@ -27,6 +27,8 @@ function ActivateConnectors(props) {
   else {
   return (
     <React.Fragment>
+      <h2>Web3 React Starter App</h2>
+      <p>Pick your Web3 provider</p>
       <div>
         {!context.active && (
         <button onClick={() => context.setConnector('Metamask')}>
