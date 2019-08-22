@@ -4,6 +4,7 @@ This is a simple web3 React starter kit that lets you package your app in a sing
 Forked from [Arweave](https://github.com/ArweaveTeam/react-inline-source-starter/) and kitted out with [web3-react](https://www.npmjs.com/package/web3-react) to get you started
 on your first web3 react app.
 
+It's deployed at acolytec3.github.io/web3-react-starter if you want to see it in action.
 ## Overview
 
 Comes preconfigured with Metamask, Portis, and Infura support out of the box.  
