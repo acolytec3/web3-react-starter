@@ -1,3 +1,13 @@
 import React from 'react';
+import Web3Provider from "web3-react";
+import connectors from "./Connectors.js";
+import ActivateConnectors from "./components/ActivateConnectors.js";
 
-export default () => <p>Hello, React!</p>;
+function App() {
+    return (
+        <Web3Provider connectors={connectors} libraryName="ether.js">
+            <ActivateConnectors />
+        </Web3Provider>
+    )
+}
+export default App;
